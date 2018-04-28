@@ -8,6 +8,9 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0;
+    background-image: url(assets/graphics/turntable.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -30,6 +33,19 @@ header {
     margin-bottom: 5px;
 }
 
+a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+a,
+a:hover {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
 header logo .img {
     position: absolute;
     left: 10px;
@@ -42,9 +58,11 @@ header logo .img {
 nav {
     display: inline-block;
     width: 100%;
+    font-size: 0;
+    line-height: 0;
     margin: 0 auto;
     padding: 0;
-    background: #010000;
+    background: rgba(0, 0, 0, 0.342);
 }
 
 nav,
@@ -54,19 +72,23 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 5px;
+    display: inline-block;
+    margin: 0;
+    padding: 0 5 0 5;
 }
 
 nav ul li a {
+    display: block;
     font-size: 22px;
     line-height: normal;
     text-align: center;
-    color: #d6bdbd;
+    color: #ffffff;
+    padding: 15px 20px;
 }
 
-nav ul li a:hover {
+a:hover {
     background: #ffffff;
+    color: #010000;
 }
 
 @media only screen and (max-width: 1345px) {
