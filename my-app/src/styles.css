@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
     line-height: 22px;
     color: #010000;
     max-width: 1920px;
+    height: 100vh;
     margin: 0 auto;
     padding: 0;
     background-image: url(assets/graphics/turntable.jpg);
@@ -13,15 +14,83 @@ body {
     background-size: cover;
 }
 
+nav a img {
+    color: white;
+}
+
 footer {
-    color: blue;
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0%;
+    padding: 0 0 0 0;
+}
+
+footer ul {
+    width: 400px;
+    padding: 0;
+    left: 0%;
+    margin: 0 auto 0 auto;
+}
+
+footer ul li {
+    color: rgb(59, 55, 55);
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+footer ul li i {
+    position: relative;
+    bottom: 10px;
+    margin: 0 5px 0 5px;
+    transform: scale(1.5);
+}
+
+footer ul li i:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    transform: scale(2, 2);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.main h1 {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.content {
+    color: white;
+    width: 50%;
+    text-align: left;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    padding: 0 0 10px 0;
 }
 
 #container {
-    width: 100%;
+    border-radius: 4%;
+    width: 250px;
     max-width: 1345px;
-    margin: 0 0 20px 0;
-    padding: 0;
+    margin: 5px auto;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.651);
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.329);
 }
 
 header {
@@ -37,6 +106,7 @@ a {
     text-decoration: none;
     font-size: 18px;
     line-height: 22px;
+    cursor: pointer;
 }
 
 a,
@@ -79,7 +149,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    font-size: 22px;
+    font-size: 16px;
     line-height: normal;
     text-align: center;
     color: #ffffff;
@@ -91,9 +161,46 @@ a:hover {
     color: #010000;
 }
 
+#container .main {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.main h1 {
+    color: white;
+}
+
+@media only screen and (min-width: 2560px) {
+    nav ul li a {
+        font-size: 32px;
+    }
+}
+
 @media only screen and (max-width: 1345px) {
     #container {
-        width: auto;
-        margin: 0 3%;
+        margin: 3%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    nav ul li a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    footer ul {
+        margin: auto auto;
+        transform: scale(0.8);
+    }
+    footer ul li {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    footer ul {
+        position: relative;
+        margin-left: -25px;
+        transform: scale(0.6);
     }
 }
