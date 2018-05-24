@@ -18,6 +18,11 @@ nav a img {
     color: white;
 }
 
+nav ul li a:hover {
+    background: #ffffff;
+    color: #010000;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -74,8 +79,10 @@ footer ul li i:hover {
 }
 
 .main h1 {
+    padding: 10px 0 0 0;
     text-align: center;
     margin-right: 20px;
+    color: white;
 }
 
 .content {
@@ -88,17 +95,20 @@ footer ul li i:hover {
     padding: 0 0 10px 0;
 }
 
+.projectContent {
+    color: white;
+    width: 50%;
+    text-align: left;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
 #container {
-    border-radius: 4%;
-    width: 250px;
-    max-width: 1345px;
-    margin: 5px auto;
-    position: absolute;
-    right: 2%;
-    top: 8%;
-    padding: 5px;
-    background: rgba(0, 0, 0, 0.651);
-    box-shadow: -3px 3px rgba(0, 0, 0, 0.329);
+    max-width: 1920px;
+    margin: auto;
+    height: 75vh;
 }
 
 header {
@@ -170,12 +180,19 @@ nav ul li a {
 
 #container .main {
     display: block;
-    width: 100%;
+    width: 250px;
     padding: 0 10px;
+    background: #01000071;
+    text-align: center;
+    border-radius: 5%;
+    position: absolute;
+    right: 5%;
 }
 
-.main h1 {
-    color: white;
+#container .projectMain {
+    background: #01000067;
+    height: 100%;
+    width: 100%;
 }
 
 @media only screen and (min-width: 2560px) {
@@ -186,7 +203,7 @@ nav ul li a {
 
 @media only screen and (max-width: 1345px) {
     #container {
-        margin: 3%;
+        margin: 2%;
     }
 }
 
